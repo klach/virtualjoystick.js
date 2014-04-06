@@ -61,6 +61,8 @@ which is display for its *base*.
 * Both elements are optional with sensible default
 * you may set ```opts.mouseSupport``` to true during debug.
 * you may set ```opts.stationaryBase``` to true for a permanent Stationary joystick base.
+* you may set ```opts.hideStick``` to false for a permanent display of the stick (also set ```opts.stationaryBase``` to true).
 * if you do use a stationary base, you must also set ```opts.baseX``` to the desired X-coordinate on the webpage and ```opts.baseY``` to the desired Y-coordinate.  The joystick base will now be fixed at this location.
 * you may set ```opts.limitStickTravel``` to true in order to limit the distance that the stick can travel from its base.  This will create an invisible circle barrier that the stick cannot leave. 
+* if you do use ```opts.limitStickTravel``` , you can also set ```opts.squareLimit``` to true in order to replace that circle with a square. 
 * if you do use ```opts.limitStickTravel``` , you can also set ```opts.stickRadius``` to the desired radius (in pixels).  The stick will now be confined to stickRadius.  If you do not set ```opts.stickRadius``` , it will default to 100 pixels radius.
